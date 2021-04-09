@@ -1,0 +1,60 @@
+.walk {
+  margin: auto;
+  width: 60%;
+  border-radius: 2em;
+  padding: 2em;
+  background: #535353;
+  margin-bottom: 2em;
+}
+p.quest {
+  margin: auto;
+  width: 60%;
+}
+.hl {
+  color: #229100;
+}
+.hl2 {
+  color: #229100;
+}
+.answer {
+  padding: 1em;
+  border-radius: 1.5em;
+  background-color: #2c2c2c;
+  overflow: hidden;
+}
+.wrapper {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  margin: auto;
+  overflow: hidden; /* add this to contain floated children */
+}
+.first {
+  width: 50%;
+  float: left; /* add this */
+  text-align: left;
+}
+.second {
+  width: 50%;
+  float: right; /* add this */
+}
+.ice {
+  margin: auto;
+}
+tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+tr:nth-child(odd) {
+  background-color: #535353;
+}
+a.button {
+  background-color: #535353;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+}
+.hide{
+  display: none;
+}
+.t{
+  color: white;
+}

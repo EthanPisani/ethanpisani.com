@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethan's Site</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='css/chem12cpt.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='css/unit4.css') }}"
+    />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="icon"
+      href="{{ url_for('static',filename='img/favicon.ico') }}"
+    />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Unit 4 Approxmation Rule Walkthrough</h1>
+      <div class="walk">
+        <p class="quest">
+          Initially 4.00 mol of carbon monoxide and 3.00 mol of bromine gas are
+          placed into a  2.5 L container, what is the concentration of the
+          reactants and Carbonyl bromide at equilibrium?
+        </p>
+        <p class="quest" id="inputText">K<sub>eq</sub> = 4.5x10<sup>-5</sup></p>
+        <br />
+        <button><a href="">Reset</a></button>
+        <button class="prevb" onclick="prev()">Previous</button>
+        <button class="nextb" onclick="next()">Next</button>
+        <button onclick="showall()">Show All</button>
+        <br />
+        <br />
+        <div class="answer">
+          <div class="wrapper">
+            <div class="first">
+              <p id="q1" class="hl2">1. Find chemical equation</p>
+              <p id="q2" class="hide">2. Balance chemical equation</p>
+              <p id="q3" class="hide">3. Make ICE table</p>
+              <p id="q4" class="hide">4. Fill in ICE table</p>
+              <p id="q5" class="hide">
+                5. Is this question an approximation rule (more than 1000x
+                difference)?
+              </p>
+              <p id="q6" class="hide">
+                6. Write keq equation with products and reactants
+              </p>
+              <p id="q7" class="hide">
+                7. Cross out x for reactants because we can assume that the
+                initial concentration of the reactants will be very similar to
+                the concentration at equilibrium
+              </p>
+              <p id="q8" class="hide">8. Solve for x</p>
+              <p id="q9" class="hide">
+                9. Use x to solve for each chemical’s equilibrium concentration
+              </p>
+            </div>
+            <div class="second">
+              <p id="w1" class="hl">
+                CO<sub>(g)</sub> + Br<sub>2(g)</sub> ⇌ COBr<sub>2(g)</sub>
+              </p>
+              <p id="w2" class="hide">
+                1CO<sub>(g)</sub> + 1Br<sub>2(g)</sub> ⇌ 1COBr<sub>2(g)</sub>
+              </p>
+              <div id="w3" class="hide">
+                <table class="ice">
+                  <tr>
+                    <td></td>
+                    <td>CO(g)</td>
+                    <td>Br2(g)</td>
+                    <td>COBr2(g)</td>
+                  </tr>
+                  <tr>
+                    <td>I</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>E</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+              <div id="w4" class="hide">
+                <table class="ice">
+                  <tr>
+                    <td></td>
+                    <td>CO(g)</td>
+                    <td>Br2(g)</td>
+                    <td>COBr2(g)</td>
+                  </tr>
+                  <tr>
+                    <td>I</td>
+                    <td>1.60 mol/L</td>
+                    <td>1.20 mol/L</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>-x</td>
+                    <td>-x</td>
+                    <td>+x</td>
+                  </tr>
+                  <tr>
+                    <td>E</td>
+                    <td>1.60 -x</td>
+                    <td>1.20 -x</td>
+                    <td>x</td>
+                  </tr>
+                </table>
+              </div>
+              <p id="w5" class="hide">
+                1.6 / 4.5x10<sup>-5</sup> = 35555.555... ∴ Yes it is more than
+                1000x difference
+              </p>
+              <div id="w6" class="hide">
+                <p>K<sub>eq</sub> = [Products] / [Reactants]</p>
+                <p>
+                  K<sub>eq</sub> = [COBr<sub>2(g)</sub>]<sup>1</sup> /
+                  [CO<sub>(g)</sub>]<sup>1</sup>[Br<sub>2(g)</sub>]<sup>1</sup>
+                </p>
+              </div>
+
+              <p id="w7" class="hide">
+                4.5x10<sup>-5</sup> = [x]<sup>1</sup> / [1.60
+                -x]<sup>1</sup>[1.20 -x]<sup>1</sup>
+              </p>
+              <div id="w8" class="hide">
+                <p>4.5x10<sup>-5</sup> = x / (1.60)(1.20)</p>
+                <p>4.5x10<sup>-5</sup> = x / 1.92</p>
+                <p>(4.5x10<sup>-5</sup>)(1.92) = x</p>
+                <p>x = 8.64x10<sup>-5</sup></p>
+              </div>
+
+              <div id="w9" class="hide">
+                <div class="wrapper">
+                  <div class="first">
+                    <p>[COBr<sub>2(g)</sub>] = x</p>
+                    <p>[COBr<sub>2(g)</sub>] = 8.64x10<sup>-5</sup> mol/L</p>
+                    <p>[Br<sub>2(g)</sub> ] = 1.20 - x</p>
+                    <p>[Br<sub>2(g)</sub> ] = 1.20 -8.64x10<sup>-5</sup></p>
+                    <p>[Br<sub>2(g)</sub> ] = 1.19991 mol/L</p>
+                    <p>[Br<sub>2(g)</sub> ] = 1.20 mol/L</p>
+                  </div>
+                  <div class="second">
+                    <p>[CO<sub>(g)</sub> ] = 1.60 - x</p>
+                    <p>[CO<sub>(g)</sub> ] = 1.60 -8.64x10<sup>-5</sup></p>
+                    <p>[CO<sub>(g)</sub> ] = 1.59991 mol/L</p>
+                    <p>[CO<sub>(g)</sub> ] = 1.60 mol/L</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p><a href="../" class="button">Go Back</a></p>
+    </div>
+  </body>
+  <script>
+    let walkan = ["w1", "w2", "w3", "w4", "w5", "w6", "w7", "w8", "w9"];
+    let walkan2 = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9"];
+    function highlight(text) {
+      var inputText = document.getElementById("inputText");
+      var innerHTML = inputText.innerHTML;
+      var index = innerHTML.indexOf(text);
+      if (index >= 0) {
+        innerHTML =
+          innerHTML.substring(0, index) +
+          "<span class='highlight'>" +
+          innerHTML.substring(index, index + text.length) +
+          "</span>" +
+          innerHTML.substring(index + text.length);
+        inputText.innerHTML = innerHTML;
+      }
+    }
+    function next() {
+      var x = document.querySelector(".hl");
+      let pos = walkan.indexOf(x.id);
+      if (pos != 8) {
+        document.getElementById(walkan[pos]).className = "";
+        document.getElementById(walkan[pos + 1]).className = "hl";
+        document.getElementById(walkan2[pos]).className = "";
+        document.getElementById(walkan2[pos + 1]).className = "hl2";
+      }
+    }
+    function prev() {
+      var x = document.querySelector(".hl");
+      let pos = walkan.indexOf(x.id);
+      if (pos != 0) {
+        document.getElementById(walkan[pos]).className = "hide";
+        document.getElementById(walkan[pos - 1]).className = "hl";
+        document.getElementById(walkan2[pos]).className = "hide";
+        document.getElementById(walkan2[pos - 1]).className = "hl2";
+      }
+    }
+    function showall() {
+      var arrayLength = walkan.length;
+      for (var i = 0; i < arrayLength; i++) {
+        document.getElementById(walkan[i]).className = "t";
+        document.getElementById(walkan2[i]).className = "t";
+      }
+    }
+  </script>
+</html>

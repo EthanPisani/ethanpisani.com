@@ -73,3 +73,11 @@ body::-webkit-scrollbar- {
     both;
   animation: text-pop-up-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+
+iframe{
+  margin: auto;
+  width: 100%;
+  border: 0;
+  
+}

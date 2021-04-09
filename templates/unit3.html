@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethan's Site</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='css/chem12cpt.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='css/unit3.css') }}"
+    />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="icon"
+      href="{{ url_for('static',filename='img/favicon.ico') }}"
+    />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="quest">
+        <h1 class="title ">Unit 3 Quiz</h1>
+        <form method="POST" action="">
+
+          <div class="q1">
+            <h4>Q.1</h4>
+            <p>
+              300g of an unkown metal at 400°C is dropped into 500mL of water at
+              21.5°C. The water is heated up to 74.6°C, what is the heat
+              capacity of the metal?
+            </p>
+            <table class="hct">
+              <tr>
+                <th>Substance</th>
+                <th>Heat Capacity</th>
+              </tr>
+              <tr>
+                <td>Iron</td>
+                <td>0.440</td>
+              </tr>
+              <tr>
+                <td>Lithium</td>
+                <td>3.56</td>
+              </tr>
+              <tr>
+                <td>Sodium</td>
+                <td>1.23</td>
+              </tr>
+              <tr>
+                <td>Aluminum</td>
+                <td>0.900</td>
+              </tr>
+              <tr>
+                <td>Potassium</td>
+                <td>0.75</td>
+              </tr>
+              <tr>
+                <td>Lead</td>
+                <td>0.160</td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td>0.1290</td>
+              </tr>
+            </table>
+            <hr />
+            <p>1.1: Please put answers with 4 sig digs (No UNITS)</p>
+            <input name="in1.1" type="text" placeholder="Ex. 0.8000" />
+            {% if testa %}
+            {{testa['in1.1']|safe}}
+            {% endif%}
+            <hr />
+            <p>1.2: Based on the chart, what metal is it likely to be (Just the metal)?</p>
+            <input name="in1.2" type="text" placeholder="Ex. Copper" />
+            {% if testa %}
+            {{testa['in1.2']|safe}}
+            {% endif%}
+                
+          </div>
+          <div class="q2">
+            <h4>Q.2</h4>
+            <p>Hexane combusts completely with oxygen gas.</p>
+            <p>2.1: What is the balanced equation (NO fractions)?</p>
+            <p class="hide">
+              <input
+                class="baleq"
+                name="in2.1.1"
+                type="text"
+                placeholder="Ex. 5H2"
+              />+<input
+                class="baleq"
+                name="in2.1.2"
+                type="text"
+                placeholder="Ex. 5H2"
+              />--><input
+                class="baleq"
+                name="in2.1.3"
+                type="text"
+                placeholder="Ex. 5H2"
+              />+<input
+                class="baleq"
+                name="in2.1.4"
+                type="text"
+                placeholder="Ex. 5H2"
+              />
+            </p>
+            {% if testa %}
+            {{testa['in2.1']|safe}}
+            {% endif%}
+            <hr />
+            <p>2.2: What is the enthalpy change (include +/-)(No UNITS)(4 sig digs)?</p>
+            <table class="hct">
+              <tr>
+                <th>Substance</th>
+                <th>ΔH<sub>f</sub> (kJ/mol)</th>
+              </tr>
+              <tr>
+                <td>C<sub>6</sub>H<sub>14</sub></td>
+                <td>-198.67</td>
+              </tr>
+              <tr>
+                <td>O<sub>2</sub></td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>CO<sub>2</sub></td>
+                <td>−393.5</td>
+              </tr>
+              <tr>
+                <td>H<sub>2</sub>O</td>
+                <td>-285.8</td>
+              </tr>
+            </table>
+            <br />
+            <input name="in2.2" type="text" placeholder="Ex. +800" />
+            {% if testa %}
+            {{testa['in2.2']|safe}}
+            {% endif%}
+            <hr />
+
+            <p>
+              2.3: What is the molar enthalpy change of the hexane (include
+              +/-)(No UNITS)(4 sig digs)?
+            </p>
+
+            <input name="in2.3" type="text" placeholder="Ex. +800" />
+            {% if testa %}
+            {{testa['in2.3']|safe}}
+            {% endif%}
+
+          </div>
+          <div class="q3">
+            <h4>Q.3</h4>
+            <p>3.1: What is the ΔS of this reaction?</p>
+            <p>
+              2Li<sub>(s)</sub> + 2H<sub>2</sub>O<sub>(l)</sub> = 2LiOH<sub
+                >(aq)</sub
+              >
+              + H<sub>2(g)</sub>
+            </p>
+            <table class="hct">
+              <tr>
+                <th>Chemical</th>
+                <th>ΔS (J/mol*K)</th>
+              </tr>
+              <tr>
+                <td>LiOH</td>
+                <td>47.97</td>
+              </tr>
+              <tr>
+                <td>Li</td>
+                <td>29.09</td>
+              </tr>
+              <tr>
+                <td>H<sub>2</sub></td>
+                <td>130.6</td>
+              </tr>
+              <tr>
+                <td>H<sub>2</sub>O</td>
+                <td>69.95</td>
+              </tr>
+            </table>
+            <br />
+
+            <p>Put answers in 4 sig digs</p>
+            <input name="in3.1" type="text" placeholder="Ex. 800" />
+            {% if testa %}
+            {{testa['in3.1']|safe}}
+            {% endif%}
+            
+
+
+            <p>3.2: Is this reaction spontaneous based on entropy alone?</p>
+
+            <input name="in3.2" type="text" placeholder="Ex. Yes/No" />
+            {% if testa %}
+            {{testa['in3.2']|safe}}
+            {% endif%}
+
+          </div>
+          <input class="subbut" value="submit" type="submit" />
+        </form>
+      </div>
+      <a href="../" class="button">Go Back</a>
+    </div>
+    
+    
+      {{style|safe}}
+  </body>
+</html>

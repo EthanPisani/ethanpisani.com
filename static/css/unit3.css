@@ -1,0 +1,98 @@
+.content {
+  width: 40%;
+  margin: auto;
+  text-align: left;
+}
+.hct {
+  width: 100%;
+  margin: auto;
+  border: #000000;
+  border-style: solid;
+}
+.baleq {
+  width: 4em;
+}
+h1.c {
+  color: greenyellow;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+h1.x {
+  color: red;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+p.c {
+  color: greenyellow;
+  display: inline;
+  font-size: 1.5em;
+}
+p.x {
+  color: red;
+  display: inline;
+  font-size: 1.5em;
+}
+.q1 {
+  border-radius: 2em;
+  padding: 2em;
+  background: #535353;
+  margin-bottom: 2em;
+}
+
+.q2 {
+  border-radius: 2em;
+  padding: 2em;
+  background: #535353;
+  margin-bottom: 2em;
+}
+
+.q3 {
+  border-radius: 2em;
+  padding: 2em;
+  background: #535353;
+  margin-bottom: 2em;
+}
+
+a.button {
+  background-color: #535353;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+}
+
+h4 {
+  margin: 0;
+}
+.title {
+  text-align: center;
+}
+.subbut {
+  text-align: right;
+  border-radius: 0.5em;
+  font-size:1.4em;
+  cursor: pointer;
+  background-color: #535353;
+}
+tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+tr:nth-child(odd) {
+  background-color: #535353;
+}
+input {
+  margin-bottom: 2em;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #2c2c2c;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.answer {
+  padding: 1em;
+  border-radius: 1.5em;
+  background-color: #2c2c2c;
+}
