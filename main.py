@@ -221,4 +221,4 @@ def model(model):
     return render_template("model.html", model=model)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=False, port=80)
+    app.run(host="0.0.0.0", debug=False, port=8034)
