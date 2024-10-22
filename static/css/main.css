@@ -1,257 +1,160 @@
 body {
-  font-size: 3em;
-  background-color: #2c2c2c; 
+  margin: 0;
+  margin-top: 10vh;
   font-family: "Roboto", sans-serif;
-  margin: auto;
-  margin-top: 30vh;
-  text-align: center;
+  color: #e0e0e0;
+  background-color: #232627;
 }
 
-a{
-  background-color: #535353;
-
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  cursor: pointer;
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
 h1 {
-  color: #229100;
-
-  
+  text-align: center;
+  font-size: 5em;
+  color: #37d605;
+  margin-top: 50px;
 }
 
-/** UNDERLINE
-:root {
-  --mainColor: #00b1c9;
+h2 {
+  color: #2cbb00;
+  margin-top: 40px;
+  font-size: 2em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #2cbb00;
+  display: inline-block;
 }
 
+p, li {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section {
+  margin-top: 20px;
+}
 
 a {
-  background:
-     linear-gradient(
-       to bottom, var(--mainColor) 0%,
-       var(--mainColor) 100%
-     );
-  font-weight: bold;
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 4px 4px;
-  text-decoration: none;
-  transition: background-size .2s;
+  /* color: #2cbb00; */
+  color: #e0e0e0;
+  text-decoration: underline;
+  text-decoration-color: #2cbb00;
+  text-decoration-thickness: .2rem;
 }
 
 a:hover {
-  background-size: 4px 50px;
+  color: #2cbb00;
+  text-decoration: underline;
+  text-decoration-color: #35e001;
+  text-decoration-thickness: .2rem;
 }
 
-
-
- * ----------------------------------------
- * animation text-pop-up-top
- * ----------------------------------------
- */
-
-/* DARW BOX   #243754   
-      <div class="wrapper">
-        <span class="square">
-          <a class="tenth before after" href="#">Chem 12 CPT</a>
-        </span>
-      </div>
-.wrapper{
-  margin:3em 0;
-}
-a,a:visited,a:hover,a:active{
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-	position:relative;
-  transition:0.5s color ease;
-	text-decoration:none;
-	color:#229100;
-	font-size:2.5em;
-}
-a:hover{
-	color:#40e7e7;
-}
-a.before:before,a.after:after{
-  content: "";
-  transition:0.5s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
-}
-a.before:before{
-  top:-0.25em;
-}
-a.after:after{
-  bottom:-0.25em;
-}
-a.before:before,a.after:after{
-  height:5px;
-  height:0.35rem;
-  width:0;
-  background:#40e7e7;
-}
-a.first:after{
-  left:0;
-}
-a.second:after{
-  right:0;
-}
-a.third:after,a.sixth:before,a.sixth:after{
-  left:50%;
-  -webkit-transform:translateX(-50%);
-          transform:translateX(-50%);
-}
-a.fourth:before,a.fourth:after{
-  left:0;
-}
-a.fifth:before,a.fifth:after{
-  right:0;
-}
-a.seventh:before{
-  right:0;
-}
-a.seventh:after{
-  left:0;
-}
-a.eigth:before{
-  left:0;
-}
-a.eigth:after{
-  right:0;
-}
-a.before:hover:before,a.after:hover:after{
-  width:100%;
-}
-.square{
-  box-sizing:border-box;
-  margin-left:-0.4em;
-  position:relative;
-  font-size:1em;
-  overflow:hidden;
-}
-.square a{
-  position:static;
-  font-size:100%;
-  padding:0.2em 0.4em;
-}
-.square:before,.square:after{
-  content: "";
-  box-sizing:border-box;
-  transition:0.25s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
-  width:5px;
-  width:0.35rem;
-  height:0;
-  background:#40e7e7;
-}
-.square:before{
-  left:0;
-  bottom:-0.2em;
-}
-.square.individual:before{
-  transition-delay:0.6s;
-}
-.square:after{
-  right:0;
-  top:-0.2em;
-}
-.square.individual:after{
-  transition-delay:0.2s;
-}
-.square a:before{
-  left:0;
-  transition:0.25s all ease;
-}
-.square a:after{
-  right:0;
-  transition:0.25s all ease;
-}
-.square.individual a:after{
-  transition:0.25s all ease 0.4s;
-}
-.square:hover:before,.square:hover:after{
-  height:calc(100% + 0.4em);
-}
-.square:hover a:before,.square:hover a:after{
-  width:100%;
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-*/
-
-body::-webkit-scrollbar {
-  width: 0;
+.skills-list li {
+  background-color: #434444;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
-body::-webkit-scrollbar- {
-  width: 0;
+/* .project-date {
+  float: right;
+  text-align: right;
+  margin-left:  100px;
+  padding-left:  100px;
+} */
+
+/* Particles.js styles */
+#particles-js {
+  /* scroll with the page */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
+p.project-container-p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .project-date {
+margin-left: auto; /* Ensures the date is pushed to the right */
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  /* color grey */
+  border: 0;
+  border-top: 1px solid #757575;
+
+}
 /* ----------------------------------------------
- * Generated by Animista on 2020-12-31 16:52:43
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
+* Generated by Animista on 2020-12-31 16:52:43
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
 
 /**
- * ----------------------------------------
- * animation text-pop-up-top
- * ----------------------------------------
- */
+* ----------------------------------------
+* animation text-pop-up-top
+* ----------------------------------------
+*/
 @-webkit-keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #229100, 0 2px 0 #229100, 0 3px 0 #229100,
-      0 4px 0 #229100, 0 5px 0 #229100, 0 6px 0 #229100, 0 7px 0 #229100,
-      0 8px 0 #229100, 0 9px 0 #229100, 0 50px 30px rgba(0, 0, 0, 0.3);
-  }
+0% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  text-shadow: none;
+}
+100% {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  text-shadow: 0 1px 0 #2cbb00, 0 2px 0 #2cbb00, 0 3px 0 #2cbb00,
+    0 4px 0 #2cbb00, 0 5px 0 #2cbb00, 0 6px 0 #2cbb00, 0 7px 0 #2cbb00,
+    0 8px 0 #2cbb00, 0 9px 0 #2cbb00, 0 50px 30px rgba(0, 0, 0, 0.3);
+}
 }
 @keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #229100, 0 2px 0 #229100, 0 3px 0 #229100,
-      0 4px 0 #229100, 0 5px 0 #229100, 0 6px 0 #229100, 0 7px 0 #229100,
-      0 8px 0 #229100, 0 9px 0 #229100, 0 50px 30px rgba(0, 0, 0, 0.3);
-  }
+0% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  text-shadow: none;
+}
+100% {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  text-shadow: 0 1px 0 #2cbb00, 0 2px 0 #2cbb00, 0 3px 0 #2cbb00,
+    0 4px 0 #2cbb00, 0 5px 0 #2cbb00, 0 6px 0 #2cbb00, 0 7px 0 #2cbb00,
+    0 8px 0 #2cbb00, 0 9px 0 #2cbb00, 0 50px 30px rgba(0, 0, 0, 0.3);
+}
 }
 
 .text-pop-up-top {
-  -webkit-animation: text-pop-up-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: text-pop-up-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+-webkit-animation: text-pop-up-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  both;
+animation: text-pop-up-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-
-iframe{
-  margin: auto;
-  width: 100%;
-  border: 0;
-  
-}
